@@ -1,0 +1,69 @@
+@media only screen and (max-width:600px) {
+    .hamburger{
+        display: block;
+        margin-left:-35%;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }    
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navMenu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color:#000;
+        width: 100%;
+        text-align: center;
+        transition:0.3s;
+        display: flex;
+    }
+    .nav-item{
+        margin: 16px 80px;
+        text-align: center;
+        float: none;
+
+
+    }
+    .navMenu.active{
+        left: 0;
+    }
+    .body{
+        height: 87.1%;
+    }
+    .row1 h2{
+        color: #fff;
+        margin-left: 2%;
+        font-size:20px;
+        margin-top: -20px;
+    }
+    .row1 p{
+        margin-right: 2%;
+        margin-left: 2%;
+        font-size:1rem;
+    }
+    #homeima{
+        display: block;
+        width: 250px;
+        height: 250px;
+        margin-top: 5%;
+        margin-right:20%;
+    }
+
+    #twitter{
+        width: 30px;
+        height: 30px;
+        float: right;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 1px;
+        display: block;
+        
+    }
+}

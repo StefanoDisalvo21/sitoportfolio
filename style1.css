@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', Sans-Serif;
+    
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+    float: right;
+
+}
+
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin:10px 30px;
+    color: #fff;
+
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.4s;
+    
+}
+
+nav ul li a:hover::after{
+    width: 50%;
+}
+
+
+nav ul li a:hover::after{
+    width: 50%;
+}
+
+.header{
+    background-color: #000;
+    color: #fff;
+    height: 8%;
+
+}
+#separatore{
+    width: 100%;
+    height: 3%;
+    background-color: #000;
+}
+.body{
+    height: 84%;
+    width: 100%;
+    background-color: #000;
+}
+h2{
+    color: #fff;
+    margin-left:2%;
+    font-size: 50px;
+    padding-top:150px;
+}
+p{
+    color: #fff;
+    margin-left:2%;
+    margin-top: 30px;
+    font-size: 30px;   
+    text-align: justify center;
+}
+button {
+	
+	margin-top:2%;
+	margin-left:2%;
+	width:250px;
+	border-radius: 30px;
+	padding:10px;
+	background:#B998FF; 
+	border: none;
+	color: #fff;
+	font-size: 30px;
+	cursor: pointer;
+
+}
+button a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+#firma{
+    float: right;
+    margin-right: 10%;
+    margin-top: -9%;
+    width: 330px;
+    height: 330px;
+}
+.footer{
+    width: 100%;
+    height: 5%;
+    background-color: #696969;
+}
+#twitter{
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3;
+    margin: 5px auto;
+    margin-left: 95%;
+    margin-right:55px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}

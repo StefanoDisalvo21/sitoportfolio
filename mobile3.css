@@ -1,0 +1,111 @@
+@media only screen and (max-width:600px) {
+    .hamburger{
+        display: block;
+        margin-left:-35%;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }    
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navMenu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #000;
+        width: 100%;
+        text-align: center;
+        transition:0.3s;
+        display: flex;
+    }
+    .nav-item{
+        margin: 16px 80px;
+        text-align: center;
+        float: none;
+
+
+    }
+    .navMenu.active{
+        left: 0;
+    }
+    .modulo{
+        color:white;
+        font-weight:500;
+        font-size: 15px;
+        border-radius: 5px;
+        line-height: 22px;
+        background-color: transparent;
+        border:2px solid #B998ff;
+        padding: 13px;
+        margin-bottom: 15px;
+        width:84%;
+        box-sizing: border-box;
+        outline:0;
+        margin-left:30px;
+    }
+    .modulo2{
+    
+        color:white;
+        font-weight:500;
+        font-size: 15px;
+        border-radius: 5px;
+        line-height: 22px;
+        background-color: transparent;
+        border:2px solid #B998ff;
+        padding: 13px;
+        margin-bottom: 15px;
+        width:84%;
+        box-sizing: border-box;
+        outline:0;
+        margin-left:30px;
+    }
+    
+    .commento{
+        color:white;
+        font-weight:500;
+        font-size: 15px;
+        border-radius: 5px;
+        line-height: 22px;
+        background-color: transparent;
+        border:2px solid #B998ff;
+        padding: 13px;
+        margin-bottom: 15px;
+        width: 84%;
+        height:50%;
+        box-sizing: border-box;
+        outline:0;
+        margin-left:30px;	
+        
+    }
+    
+    [type="submit"] {
+      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+      width:200px;
+      background:#B998ff;
+      border-radius:5px;
+      border:0;
+      cursor:pointer;
+      color:white;
+      font-size:24px;
+      padding-top:10px;
+      padding-bottom:10px;
+      margin-left:30px;
+      
+    }
+    #twitter{
+        width: 30px;
+        height: 30px;
+        float: right;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 1px;
+        display: block;
+        
+    }
+}
